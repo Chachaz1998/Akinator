@@ -1,35 +1,43 @@
 # Akinator
 
 #import openpyxl and panda to run the program and read the excel-file
+
 import openpyxl
 import pandas as pd
 
 #Read the excel-file with all the information about the famous people and the questions 
+
 df = pd.read_excel("Excel_Liste_buchstaben.xlsx")
 
 #Read the columns headings
+
 list_of_questions = df.columns
 
 
 #Read the columns index
+
 df.index = ('Johnny Depp', 'Brad Pitt', 'Meryl Streep', 'Tom Cruise', 'Till Schweiger', 'Matthias Schweighöfer', 'Marlon Brando', 'Marilyn Monroe', 'Justin Bieber', 'Elvis Presley', 'Billie Eilish', 'Madonna', 'Britney Spears', 'Taylor Swift', 'Stress', 'Helene Fischer', 'Cleopatra', 'Napoleon', 'Picasso', 'Christoph Kolumbus', "Jeanne d'Arc", 'Leonardo da Vini', 'Wolfgang Amadeus Mozart', 'Christiano Ronaldo', 'Roger Federer', 'Tiger Woods', 'Serena Williams', 'Beat Feuz', 'Harry Potter', 'Hulk', 'Spider Man', 'Schlumpf', 'Angela Merkel', 'Donald Trump', 'Barack Obama', 'Wladimir Putin', 'Alain Berset', 'John F. Kennedy', 'Queen Elisabeth', 'Rapunzel', 'Schneewittchen', 'Aschenputtel', 'Rotkäppchen', 'Nemo', 'Simba', 'Biene Maya', 'Barbie', 'Alberto Giaccometti', 'Heidi Klum', 'Thomas Gottschalk', 'Greta Thunberg')
 
 #Store all possible names in list_of_names
+
 list_of_names = df.index
 
 #Import one name from "Excel_Liste_buchstaben.xlsx" randomly and store in who_am_I
+
 import random
-##who_am_I = "Harry Potter"
 who_am_I = random.choice(list_of_names)
 res = who_am_I
 
 #Set user's score to 50
+
 score = 50
 
 #Ask: "Ask your first question: " so user can enter his first question
+
 user_question = input("Ask your first question: ")
 
 #When user's input is not in heading of Excel-List
+
 while user_question not in df.columns:
     if user_question in list_of_names:
         #If the user enters the name of a famous person and the name is the same as the randomly picked one he wins the game. The game stops here. The program asks if he/she wants to play again.
