@@ -218,6 +218,7 @@ else:
                             print("That's a shame.")
                             break
                     else:
+                        score -= 10
                         user_question = input ("Wrong person. You just lost 10 points. You now have " + str(score) + " points. Ask another question or guess again: ")
                 else:
                     user_question = input("This question can't be answered. Try another one. Ask a question or guess who you are: ") 
