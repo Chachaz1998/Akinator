@@ -217,9 +217,25 @@ else:
                         else:
                             print("That's a shame.")
                             break
-                    else:
+                   else:
                         score -= 10
-                        user_question = input ("Wrong person. You just lost 10 points. You now have " + str(score) + " points. Ask another question or guess again: ")
+                         #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
+                        if score <= 0:
+                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
+                            #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                            if play_again == "Yes":
+                                score = 50
+                                who_am_I = random.choice(list_of_names)
+                                res = who_am_I
+                                user_question = input ("Ask your first question: ")
+                                continue
+                            #If user doesn't want to play again, the game ends here.
+                            else:
+                                print("That's a shame.")
+                                break
+                        else:
+                            print("Wrong person. You just lost 10 points. You now have " + str(score) + " points. Ask another question or guess again: ")
+                            user_question = input ("Ask a question or guess: ") 
                 else:
                     user_question = input("This question can't be answered. Try another one. Ask a question or guess who you are: ") 
                     continue
