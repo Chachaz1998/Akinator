@@ -211,8 +211,8 @@ else:
                             score = 50
                             who_am_I = random.choice(list_of_names)
                             res = who_am_I
-                                user_question = input ("Ask your first question: ")
-                                continue
+                            user_question = input ("Ask your first question: ")
+                            continue
                             #If user doesn't want to play again, the game ends here.
                             else:
                                 print("That's a shame.")
