@@ -33,7 +33,7 @@ while user_question not in df.columns:
         #If the user enters the name of a famous person and the name is the same as the randomly picked one he wins the game. The game stops here. The program asks if he/she wants to play again.
         if user_question == who_am_I:
             play_again = input ("Well done, you found it. You have " + str(score) + " points. Do you wanna play again? (Yes/No): ")
-            #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+            #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
             if play_again == "Yes":
                 score = 50
                 who_am_I = random.choice(list_of_names)
@@ -50,9 +50,7 @@ while user_question not in df.columns:
             #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
             if score <= 0:
                 play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
-                ##break
-                ##play_again = input ("Do you wanna play again? (Yes/No): ")
-                #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                 if play_again == "Yes":
                     score = 50
                     who_am_I = random.choice(list_of_names)
@@ -75,9 +73,7 @@ while user_question not in df.columns:
             #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
             if score <= 0:
                 play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
-                ##break
-                ##play_again = input ("Do you wanna play again? (Yes/No): ")
-                #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                 if play_again == "Yes":
                     score = 50
                     who_am_I = random.choice(list_of_names)
@@ -107,8 +103,8 @@ else:
                 if user_question in list_of_names:
                     #If user enters the name of a famous person and the name is the same as the randomly picked one he wins the game. The program asks, if he/she wants to play again.
                     if user_question == who_am_I:
-                        play_again = input ("Well done, you found it. You have " + str(score) + " points. Do you wanna play again? (Yes/No):")
-                        #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                        play_again = input ("Well done, you found it. You have " + str(score) + " points. Do you wanna play again? (Yes/No): ")
+                        #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                         if play_again == "Yes":
                             score = 50
                             who_am_I = random.choice(list_of_names)
@@ -124,10 +120,8 @@ else:
                         score -= 10
                         #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
                         if score <= 0:
-                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
-                            ##break
-                             ##play_again = input ("Do you wanna play again? (Yes/No): ")
-                            #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No): ")
+                            #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                             if play_again == "Yes":
                                 score = 50
                                 who_am_I = random.choice(list_of_names)
@@ -148,10 +142,8 @@ else:
                         score -=10
                         #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
                         if score <= 0:
-                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
-                            ##break
-                            ##play_again = input ("Do you wanna play again? (Yes/No): ")
-                            #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No): ")
+                            #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                             if play_again == "Yes":
                                 score = 50
                                 who_am_I = random.choice(list_of_names)
@@ -172,10 +164,8 @@ else:
                         score -=10
                         #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
                         if score <= 0:
-                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
-                            ##break
-                            ##play_again = input ("Do you wanna play again? (Yes/No): ")
-                            #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                            play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No): ")
+                            #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                             if play_again == "Yes":
                                 score = 50
                                 who_am_I = random.choice(list_of_names)
@@ -195,10 +185,8 @@ else:
             score -= 5
             #If the user's score is less than 0, he/she loses the game. The program asks if he/she wants to play again.
             if score <= 0:
-                play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No):")
-                ##break
-                ##play_again = input ("Do you wanna play again? (Yes/No): ")
-                #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                play_again = input ("Game over. You've lost too many points. You were " + who_am_I +". Do you wanna play again? (Yes/No): ")
+                #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                 if play_again == "Yes":
                     score = 50
                     who_am_I = random.choice(list_of_names)
@@ -218,7 +206,7 @@ else:
                     #If user enters the name of a famous person and the name is the same as the randomly picked one he wins the game. The program asks, if user wants to play again.
                     if user_question == who_am_I:
                         play_again = input ("Well done, you found it. You have " + str(score) + " points. Do you wanna play again? (Yes/No):")
-                        #If user wants to play again, another name is picked randomly and sotred in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
+                        #If user wants to play again, another name is picked randomly and stored in who_am_I again. Also the score is set to 50. The user can then ask his/her first question of the new round.
                         if play_again == "Yes":
                             score = 50
                             who_am_I = random.choice(list_of_names)
